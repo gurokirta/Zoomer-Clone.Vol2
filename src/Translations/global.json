@@ -1,0 +1,41 @@
+{
+  "en": {
+    "hotline": "Hotline",
+    "brands": "Brands",
+    "branches": "Branches",
+    "cart": "Cart",
+    "addToCart": "Add To Cart",
+    "installment": "installment",
+    "navigation": "Navigation",
+    "signIn": "SignIn",
+    "signUp": "signUp",
+    "price": "price",
+    "totalPrice": "Total Price",
+    "emptyCart": "There are no items in the cart",
+    "sum": "Sum",
+    "totalMoney": "Total Sum:",
+    "delivery": "Delivery",
+    "checkout": "Checkout",
+    "allsales": "All Sales"
+  },
+  "ge": {
+    "hotline": "ცხელი ხაზი",
+    "brands": "ბრენდები",
+    "branches": "ფილიალები",
+    "cart": "კალათა",
+    "addToCart": "კალათაში დამატება",
+    "hotOffers": "ცხელი შეთავაზებები",
+    "navigation": "ნავიგაცია",
+    "signIn": "შესვლა",
+    "signUp": "რეგისტრაცია",
+    "price": "ფასი",
+    "totalPrice": "ჯამი",
+    "emptyCart": "თქვენი კალათა ცარიელია",
+    "sum": "ჯამი",
+    "totalMoney": "სულ თანხა:",
+    "delivery": "მიტანის სერვისი",
+    "checkout": "გადახდა",
+    "installment": "ონლაინ განვადება",
+    "allsales": "ყველა აქცია"
+  }
+}

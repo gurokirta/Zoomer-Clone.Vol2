@@ -20,8 +20,12 @@ const NavigationDropDownHover = () => {
         }}
         className="right-menu"
       >
-        <img src="/src/assets/icons/cart.svg" alt="cart" />
-        <button className="cart-button">{getTotalPrice()}ლ</button>
+        <Link to="/cart">
+          <img src="/src/assets/icons/cart.svg" alt="cart" />
+          <button className="cart-button">
+            {parseFloat(getTotalPrice().toString()).toFixed(2)}₾
+          </button>
+        </Link>
         <Box
           sx={{
             position: "absolute",

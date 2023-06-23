@@ -62,10 +62,6 @@ export const useStore = create<ProductStore>(set => ({
       cartItems: state.cartItems.filter(item => item.id !== itemId),
     })),
   clearCart: () => set({ cartItems: [] }),
-  //   getTotalPrice: () => {
-  //     const { cartItems } = useStore.getState();
-  //     cartItems.reduce((total: number, item: Product) => total + item.price, 0);
-  //   },
 
   getTotalPrice: () => {
     const cartItems = useStore.getState().cartItems;
@@ -75,16 +71,5 @@ export const useStore = create<ProductStore>(set => ({
     }
     return totalPrice;
   },
-
-  ////////////////////
-  // firstName: "",
-  // lastName: "",
-  // phoneNumber: "",
-  // email: "",
-  // password: "",
-  // setFirstName: firstName => set({ firstName }),
-  // setLastName: lastName => set({ lastName }),
-  // setPhoneNumber: phoneNumber => set({ phoneNumber }),
-  // setEmail: email => set({ email }),
-  // setPassword: password => set({ password }),
+  setProduct: (product: Product) => set({ product }), // Added for product detail
 }));
