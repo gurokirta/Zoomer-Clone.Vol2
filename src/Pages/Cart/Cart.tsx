@@ -36,7 +36,12 @@ const Cart = () => {
             <Typography>ფასი</Typography>
             <Typography>ჯამი</Typography>
           </Box>
-          <Box>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
             {cartItems.map(item => (
               <Box
                 key={item.id}
@@ -45,10 +50,17 @@ const Cart = () => {
                   marginBottom: "20px",
                 }}
               >
-                <Typography>{item.title}</Typography>
-                <Typography>{item.amount}</Typography>
-                <Typography>{item.price}</Typography>
-                <Typography>{item.price * item.amount}</Typography>
+                <Box
+                  sx={{
+                    display: "flex",
+                    gap: "205px",
+                  }}
+                >
+                  <Typography>{item.title}</Typography>
+                  <Typography>{item.amount}</Typography>
+                  <Typography>{item.price}</Typography>
+                  <Typography>{item.price * item.amount}</Typography>
+                </Box>
               </Box>
             ))}
           </Box>
